@@ -1,0 +1,27 @@
+# Ignore tools
+tools/
+
+# Ignore output
+output/
+
+# Ignore virtual environment
+.venv/
+
+# Ignore Visual Studio Code settings
+.vscode/
+
+# Ignore Python cache files
+__pycache__/
+
+# Ignore common temporary files
+*.tmp
+*.bak
+*.swp
+*.~lock.*
+
+# Ignore credentials file
+**/credentials
+
+# Ignore MSAL token cache file
+**/msal_token_cache.json
+

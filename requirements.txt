@@ -1,0 +1,5 @@
+termcolor
+prettytable
+pandas
+requests
+openpyxl

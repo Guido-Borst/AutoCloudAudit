@@ -1,0 +1,768 @@
+Categories:
+*- Insecure or insufficient authentication
+*- Accounts with unnecessary roles or permissions
+*- Insufficient audit logging
+*- Network access from untrusted networks
+*- Insecure transmission or storage of data
+*- Insufficient availability of data and infrastructure
+*- Insufficient monitoring of vulnerabilities in the infrastructure
+*- Insufficient monitoring of suspicious activities	
+*- Missing or insufficient authentication or authorization
+*- Missing security updates
+*- DNS specific issues
+*- Insecure storage of secrets
+
+
+
+### Insecure or insufficient authentication
+- iam_avoid_root_usage
+- iam_administrator_access_with_mfa
+- iam_user_mfa_enabled_console_access
+- iam_rotate_access_key_90_days
+- iam_user_accesskey_unused
+- iam_password_policy_minimum_length_14
+- iam_user_console_access_unused
+- iam_check_saml_providers_sts
+- iam_password_policy_expires_passwords_within_90_days_or_less
+- iam_password_policy_lowercase
+- iam_password_policy_number
+- iam_password_policy_reuse_24
+- iam_password_policy_symbol
+- iam_password_policy_uppercase
+- iam_root_hardware_mfa_enabled
+- iam_root_mfa_enabled
+- iam_user_hardware_mfa_enabled
+- opensearch_service_domains_internal_user_database_enabled
+- opensearch_service_domains_use_cognito_authentication_for_kibana
+- organizations_delegated_administrators
+- sagemaker_notebook_instance_root_access_disabled
+- apigateway_restapi_client_certificate_enabled
+- directoryservice_supported_mfa_radius_enabled
+- ec2_instance_profile_attached
+
+- iam-assume-role-lacks-external-id-and-mfa
+- iam-assume-role-no-mfa
+- iam-password-policy-expiration-threshold
+- iam-password-policy-minimum-length
+- iam-password-policy-no-expiration
+- iam-password-policy-no-lowercase-required
+- iam-password-policy-no-number-required
+- iam-password-policy-no-symbol-required
+- iam-password-policy-no-uppercase-required
+- iam-password-policy-reuse-enabled
+- iam-root-account-no-hardware-mfa
+- iam-root-account-no-mfa
+- iam-root-account-used-recently
+- iam-root-account-with-active-certs
+- iam-root-account-with-active-keys
+- iam-service-user-with-password
+- iam-unused-credentials-not-disabled
+- iam-user-no-key-rotation
+- iam-user-no-Active-key-rotation
+- iam-user-no-Inactive-key-rotation
+- iam-user-with-multiple-access-keys
+- iam-user-with-password-and-key
+- iam-user-without-mfa
+- s3-bucket-no-mfa-delete
+
+- Access Analyzer Active Findings
+- Instance IAM Role
+- IAM Master and IAM Manager Roles
+- IAM User Admins
+- IAM User Unauthorized to Edit
+- Root Access Keys
+- Root Account In Use
+- Root Hardware MFA
+- Root MFA Enabled
+- Users MFA Enabled
+- Users Password And Keys
+
+
+### Accounts with unnecessary roles or permissions
+- iam_aws_attached_policy_no_administrative_privileges
+- iam_customer_attached_policy_no_administrative_privileges
+- iam_customer_unattached_policy_no_administrative_privileges
+- iam_role_administratoraccess_policy
+- iam_inline_policy_no_administrative_privileges
+- iam_no_custom_policy_permissive_role_assumption
+- iam_policy_allows_privilege_escalation
+- iam_policy_attached_only_to_group_or_roles
+- iam_no_root_access_key
+- iam_policy_no_full_access_to_cloudtrail
+- iam_policy_no_full_access_to_kms
+- iam_role_cross_account_readonlyaccess_policy
+- iam_role_cross_service_confused_deputy_prevention
+- iam_user_no_setup_initial_access_key
+- iam_user_two_active_access_key
+- iam_user_with_temporary_credentials
+- vpc_peering_routing_tables_with_least_privilege
+- ec2_instance_internet_facing_with_instance_profile
+
+- cloudformation-stack-with-role
+- ec2-unused-security-group
+- iam-ec2-role-without-instances
+- iam-group-with-inline-policies
+- iam-group-with-no-users
+- iam-human-user-with-policies
+- iam-inline-policy-allows-NotActions
+- iam-inline-policy-allows-non-sts-action
+- iam-inline-policy-for-role
+- iam-lightspin-user-action-denied-for-group
+- iam-managed-policy-allows-NotActions
+- iam-managed-policy-allows-full-privileges
+- iam-managed-policy-allows-non-sts-action
+- iam-managed-policy-allows-iam-PassRole
+- iam-managed-policy-allows-sts-AssumeRole
+- iam-managed-policy-for-role
+- iam-managed-policy-no-attachments
+- iam-role-with-inline-policies
+- iam-user-unused-access-key-initial-setup
+- iam-user-with-policies
+- iam-user-with-inline-policies
+
+- Backup Vault Policies
+- OpenSearch Domain Cross Account access
+- S3 Bucket All Users Policy
+- SNS Cross Account Access
+- SQS Cross Account Access
+
+
+
+### Insufficient audit logging
+- s3_bucket_server_access_logging_enabled
+- ec2_instance_detailed_monitoring_enabled
+- cloudfront_distributions_logging_enabled
+- elbv2_logging_enabled
+- vpc_flow_logs_enabled
+- opensearch_service_domains_audit_logging_enabled
+- route53_public_hosted_zones_cloudwatch_logging_enabled
+- eks_control_plane_logging_all_types_enabled
+- opensearch_service_domains_cloudwatch_logging_enabled
+- redshift_cluster_audit_logging
+- wafv2_webacl_logging_enabled
+- accessanalyzer_enabled
+- accessanalyzer_enabled_without_findings
+- acm_certificates_transparency_logs_enabled
+- apigateway_restapi_logging_enabled
+- apigatewayv2_api_access_logging_enabled
+- awslambda_function_invoke_api_operations_cloudtrail_logging_enabled
+- cloudtrail_cloudwatch_logging_enabled
+- cloudtrail_logs_s3_bucket_access_logging_enabled
+- cloudtrail_multi_region_enabled
+- cloudtrail_s3_dataevents_read_enabled
+- cloudtrail_s3_dataevents_write_enabled
+- cloudwatch_log_group_retention_policy_specific_days_enabled
+- config_recorder_all_regions_enabled
+- directoryservice_directory_log_forwarding_enabled
+- elb_logging_enabled
+
+- acm-certificate-with-transparency-logging-disabled
+- cloudtrail-no-cloudwatch-integration
+- cloudtrail-no-data-logging
+- cloudtrail-no-global-services-logging
+- cloudtrail-no-log-file-validation
+- cloudtrail-no-logging
+- cloudtrail-not-configured
+- cloudtrail-partial-data-logging
+- config-recorder-not-configured
+- elb-no-access-logs
+- elbv2-no-access-logs
+- redshift-parameter-group-logging-disabled
+- s3-bucket-no-logging
+- vpc-subnet-without-flow-log
+
+- CloudTrail Enabled
+- Config Service Missing Bucket
+
+
+
+### Network access from untrusted networks
+- s3_account_level_public_access_blocks
+- s3_bucket_level_public_access_block
+- s3_bucket_acl_prohibited
+- s3_bucket_policy_public_write_access
+- s3_bucket_public_access
+- s3_bucket_public_list_acl
+- s3_bucket_public_write_acl
+- cloudfront_distributions_using_waf
+- sns_topics_not_publicly_accessible
+- ec2_networkacl_allow_ingress_any_port
+- ec2_networkacl_allow_ingress_tcp_port_22
+- ec2_networkacl_allow_ingress_tcp_port_3389
+- ec2_securitygroup_allow_ingress_from_internet_to_any_port
+- ec2_securitygroup_allow_ingress_from_internet_to_port_mongodb_27017_27018
+- ec2_securitygroup_allow_ingress_from_internet_to_tcp_ftp_port_20_21
+- ec2_securitygroup_allow_ingress_from_internet_to_tcp_port_22
+- ec2_securitygroup_allow_ingress_from_internet_to_tcp_port_3389
+- ec2_securitygroup_allow_ingress_from_internet_to_tcp_port_cassandra_7199_9160_8888
+- ec2_securitygroup_allow_ingress_from_internet_to_tcp_port_elasticsearch_kibana_9200_9300_5601
+- ec2_securitygroup_allow_ingress_from_internet_to_tcp_port_kafka_9092
+- ec2_securitygroup_allow_ingress_from_internet_to_tcp_port_memcached_11211
+- ec2_securitygroup_allow_ingress_from_internet_to_tcp_port_mysql_3306
+- ec2_securitygroup_allow_ingress_from_internet_to_tcp_port_oracle_1521_2483
+- ec2_securitygroup_allow_ingress_from_internet_to_tcp_port_postgres_5432
+- ec2_securitygroup_allow_ingress_from_internet_to_tcp_port_redis_6379
+- ec2_securitygroup_allow_ingress_from_internet_to_tcp_port_sql_server_1433_1434
+- ec2_securitygroup_allow_ingress_from_internet_to_tcp_port_telnet_23
+- ec2_securitygroup_allow_wide_open_public_ipv4
+- sqs_queues_not_publicly_accessible
+- efs_not_publicly_accessible
+- elbv2_waf_acl_attached
+- awslambda_function_not_publicly_accessible
+- opensearch_service_domains_not_publicly_accessible
+- rds_instance_no_public_access
+- rds_snapshots_public_access
+- eks_endpoints_not_publicly_accessible
+- ssm_documents_set_as_public
+- emr_cluster_account_public_block_enabled
+
+- neptune_cluster_uses_public_subnet
+- redshift_cluster_public_access
+- sagemaker_models_network_isolation_enabled
+- sagemaker_models_vpc_settings_configured
+- sagemaker_notebook_instance_vpc_settings_configured
+- sagemaker_notebook_instance_without_direct_internet_access_configured
+- sagemaker_training_jobs_network_isolation_enabled
+- sagemaker_training_jobs_vpc_settings_configured
+- vpc_subnet_no_public_ip_by_default
+- vpc_subnet_separate_private_public
+- appstream_fleet_default_internet_access_disabled
+- awslambda_function_url_public
+- cloudtrail_logs_s3_bucket_is_not_publicly_accessible
+- ec2_ami_public
+- ec2_ebs_public_snapshot
+- ec2_instance_public_ip
+- ec2_securitygroup_default_restrict_traffic
+- ec2_securitygroup_with_many_ingress_egress_rules
+- ecr_repositories_not_publicly_accessible
+- eks_cluster_network_policy_enabled
+- eks_cluster_private_nodes_enabled
+- elasticache_cluster_uses_public_subnet
+- elb_internet_facing
+- elbv2_internet_facing
+- emr_cluster_master_nodes_no_public_ip
+- emr_cluster_publicly_accesible
+
+- ec2-ami-public
+- ec2-default-security-group-with-rules
+- ec2-ebs-snapshot-public
+- ec2-instance-with-public-ip
+- ec2-security-group-opens-all-ports-to-all
+- ec2-security-group-opens-all-ports-to-self
+- ec2-security-group-opens-all-ports
+- ec2-security-group-opens-icmp-to-all
+- ec2-security-group-opens-known-port-to-all
+- ec2-security-group-opens-SSH-port-to-all
+- ec2-security-group-opens-TCP-port-to-all
+- ec2-security-group-opens-UDP-port-to-all
+- ec2-security-group-opens-plaintext-port-FTP
+- ec2-security-group-opens-port-range
+- ec2-security-group-opens-port-to-all
+- ec2-security-group-whitelists-aws-ip-from-banned-region
+- ec2-security-group-whitelists-aws
+- ec2-security-group-whitelists-non-elastic-ips
+- ec2-security-group-whitelists-unknown-aws
+- ec2-security-group-whitelists-unknown-cidrs
+- elbv2-http-request-smuggling
+- rds-instance-publicly-accessible
+- rds-security-group-allows-all
+- rds-snapshot-public
+- redshift-cluster-publicly-accessible
+- redshift-security-group-whitelists-all
+- s3-bucket-world-acl
+- vpc-custom-network-acls-allow-all
+- vpc-custom-network-acls-allow-all-egress
+- vpc-custom-network-acls-allow-all-ingress
+- vpc-default-network-acls-allow-all
+- vpc-default-network-acls-allow-all-egress
+- vpc-default-network-acls-allow-all-ingress
+- vpc-routing-tables-with-peering
+- vpc-subnet-with-allow-all-egress-acls
+- vpc-subnet-with-allow-all-ingress-acls
+- vpc-subnet-with-bad-acls
+- vpc-subnet-with-default-acls
+
+- API Gateway Private Endpoints
+- Public S3 CloudFront Origin
+- CloudTrail Bucket Private
+- DMS Publicly Accessible Instances
+- Allowed Custom Ports
+- Cross VPC Public Private Communication
+- Amazon EBS Public Snapshots
+- Unrestricted Network ACL Inbound Traffic
+- Open All Ports Protocols
+- Open All Ports Protocols Egress
+- Open CIFS
+- Open Cassandra Client
+- Open Cassandra Internode
+- Open Cassandra Monitoring
+- Open Cassandra Thrift
+- Open Custom Ports
+- Open DNS
+- Open Docker
+- Open Elasticsearch
+- Open FTP
+- Open HTTP
+- Open HTTPS
+- Open Hadoop HDFS NameNode Metadata Service
+- Open Hadoop HDFS NameNode WebUI
+- Open Internal Web
+- Open Kibana
+- Open LDAP
+- Open LDAPS
+- Open Memcached
+- Open MongoDB
+- Open MySQL
+- Open NetBIOS
+- Open Oracle
+- Open Oracle Auto Data Warehouse
+- Open PostgreSQL
+- Open RDP
+- Open RPC
+- Open Redis
+- Open SMBoTCP
+- Open SMTP
+- Open SNMP
+- Open SQL Server
+- Open SSH
+- Open Salt
+- Open Telnet
+- Open VNC Client
+- Open VNC Server
+- Public AMI
+- Public IP Address EC2 Instances
+- Event Bus Public Access
+- Lambda Public Access
+- OpenSearch Access From IP Addresses
+- OpenSearch Exposed Domain
+- RDS Public Subnet
+- RDS Publicly Accessible
+- RDS Snapshot Publicly Accessible
+- Redshift Publicly Accessible
+- S3 Bucket Website Enabled
+
+
+
+### Insecure transmission or storage of data
+- s3_bucket_secure_transport_policy
+- s3_bucket_default_encryption
+- ec2_ebs_default_encryption
+- ec2_ebs_snapshots_encrypted
+- ec2_instance_imdsv2_enabled
+- sqs_queues_server_side_encryption_enabled
+- efs_encryption_at_rest_enabled
+- cloudfront_distributions_https_enabled
+- cloudfront_distributions_using_deprecated_ssl_protocols
+- cloudfront_distributions_field_level_encryption_enabled
+- elbv2_insecure_ssl_ciphers
+- elbv2_ssl_listeners
+- athena_workgroup_encryption
+- opensearch_service_domains_encryption_at_rest_enabled
+- opensearch_service_domains_https_communications_enforced
+- opensearch_service_domains_node_to_node_encryption_enabled
+- rds_instance_storage_encrypted
+- glue_data_catalogs_metadata_encryption_enabled
+- rds_instance_transport_encrypted
+- s3_bucket_kms_encryption
+- sagemaker_notebook_instance_encryption_enabled
+- sagemaker_training_jobs_intercontainer_encryption_enabled
+- sagemaker_training_jobs_volume_and_output_encryption_enabled
+- workspaces_volume_encryption_enabled
+- backup_vaults_encrypted
+- cloudtrail_kms_encryption_enabled
+- cloudwatch_log_group_kms_encryption_enabled
+- directoryservice_radius_server_security_protocol
+- documentdb_instance_storage_encrypted
+- dynamodb_accelerator_cluster_encryption_enabled
+- dynamodb_tables_kms_cmk_encryption_enabled
+- ec2_ebs_volume_encryption
+- elb_insecure_ssl_ciphers
+- elbv2_desync_mitigation_mode
+- glue_database_connections_ssl_enabled
+- glue_development_endpoints_cloudwatch_logs_encryption_enabled
+- glue_development_endpoints_job_bookmark_encryption_enabled
+- glue_development_endpoints_s3_encryption_enabled
+- glue_etl_jobs_amazon_s3_encryption_enabled
+- glue_etl_jobs_cloudwatch_logs_encryption_enabled
+- glue_etl_jobs_job_bookmark_encryption_enabled
+
+- cloudfront-distribution-cleartext-origin
+- cloudfront-distribution-insecure-origin
+- cloudtrail-no-encryption-with-kms
+- ec2-ebs-default-encryption-disabled
+- ec2-ebs-snapshot-not-encrypted
+- ec2-ebs-volume-not-encrypted
+- ec2-security-group-opens-plaintext-port
+- elb-listener-allowing-cleartext
+- elb-older-ssl-policy
+- elbv2-listener-allowing-cleartext
+- elbv2-older-ssl-policy
+- rds-instance-storage-not-encrypted
+- redshift-cluster-database-not-encrypted
+- redshift-parameter-group-ssl-not-required
+- s3-bucket-allowing-cleartext
+- s3-bucket-no-default-encryption
+- ses-identity-dkim-not-enabled
+- sqs-queue-server-side-encryption-disabled
+
+- Custom Domain TLS Version
+- AppFlow Flow Encrypted
+- App Mesh TLS Required
+- Service Encrypted
+- Workgroup Encrypted
+- Audit Manager Data Encrypted
+- Backup Vault Encrypted
+- Custom Model Encryption Enabled
+- CloudTrail Encryption
+- CloudWatch Log Groups Encrypted
+- CodeArtifact Domain Encrypted
+- Project Artifacts Encrypted
+- Pipeline Artifacts Encrypted
+- Amazon Comprehend Output Result Encryption
+- Amazon Comprehend Volume Encryption
+- Connect Customer Profiles Domain Encrypted
+- Connect Instance Attachments Encrypted
+- Connect Instance Call Recording Encrypted
+- Connect Instance Media Streams Encrypted
+- Connect Instance Exported Reports Encrypted
+- Connect Instance Chat Transcripts Encrypted
+- Connect Voice ID Domain Encrypted
+- Connect Wisdom Domain Encrypted
+- DMS Encryption Enabled
+- DocumentDB Cluster Encrypted
+- DynamoDB Accelerator Cluster Encryption
+- DynamoDB KMS Encryption
+- EBS Encryption Enabled By Default
+- EBS Encrypted Snapshots
+- EBS Encryption Enabled
+- Encrypted AMI
+- ECR Repository Encrypted
+- EFS CMK Encrypted
+- EFS Encryption Enabled
+- ElastiCache Redis Cluster Encryption At-Rest
+- ElastiCache Redis Cluster Encryption In-Transit
+- Elastic Transcoder Job Outputs Encrypted
+- Elastic Transcoder Pipeline Data Encrypted
+- ELBv2 NLB Listener Security
+- EMR Encryption At Rest
+- EMR Encryption In Transit
+- FinSpace Environment Encrypted
+- Firehose Delivery Stream Destination CMK Encrypted
+- Firehose Delivery Streams Encrypted
+- Forecast Dataset Export Encrypted
+- Forecast Dataset Encrypted
+- Fraud Detector Data Encrypted
+- FSx File System Encrypted
+- AWS Glue Job Bookmark Encryption Enabled
+- AWS Glue Data Catalog CMK Encrypted
+- AWS Glue Data Catalog Encryption Enabled
+- AWS Glue CloudWatch Encrypted Logs
+- AWS Glue S3 Encryption Enabled
+- AWS Glue DataBrew Job Output Encrypted
+- Exported Findings Encrypted
+- Image Recipe Storage Volumes Encrypted
+- IoT SiteWise Data Encrypted
+- Kendra Index Encrypted
+- Kinesis Data Streams Encrypted
+- Kinesis Streams Encrypted
+- Video Stream Data Encrypted
+- Audio Logs Encrypted
+- Geofence Collection Data Encrypted
+- Tracker Data Encrypted
+- LookoutMetrics Anomaly Detector Encrypted
+- LookoutEquipment Dataset Encrypted
+- Model Data Encrypted
+- Managed Blockchain Network Member Data Encrypted
+- MemoryDB Cluster Encrypted
+- MQ Broker Encrypted
+- MSK Cluster Encryption At-Rest
+- Environment Data Encrypted
+- Neptune Database Instance Encrypted
+- OpenSearch Collection CMK Encryption
+- OpenSearch Encryption Enabled
+- OpenSearch Encrypted Domain
+- OpenSearch Node To Node Encryption
+- Environment Template Encrypted
+- Ledger Encrypted
+- RDS CMK Encryption
+- RDS Encryption Enabled
+- RDS Snapshot Encryption
+- RDS Transport Encryption Enabled
+- Redshift Cluster CMK Encryption
+- Redshift Encryption Enabled
+- S3 Bucket Encryption
+- S3 Bucket Encryption In Transit
+- S3 Bucket Enforce Object Encryption
+- S3 Bucket Encryption Enforcement
+- Notebook Data Encrypted
+- SES Email Messages Encrypted
+- SNS Topic CMK Encryption
+- SNS Topic Encrypted
+- SQS Encrypted
+- SQS Encryption Enabled
+- Timestream Database Encrypted
+- Translate Job Output Encrypted
+- WorkSpaces Volume Encryption
+- XRay Encryption Enabled
+
+
+### Insufficient availability of data and infrastructure
+- s3_bucket_no_mfa_delete
+- s3_bucket_object_lock
+- s3_bucket_object_versioning
+- ec2_ebs_volume_snapshots_exists
+- efs_have_backup_enabled
+- elbv2_deletion_protection
+- rds_instance_deletion_protection
+- rds_instance_backup_enabled
+- rds_instance_multi_az
+- redshift_cluster_automated_snapshot
+- shield_advanced_protection_in_associated_elastic_ips
+- shield_advanced_protection_in_classic_load_balancers
+- shield_advanced_protection_in_cloudfront_distributions
+- shield_advanced_protection_in_global_accelerators
+- shield_advanced_protection_in_internet_facing_load_balancers
+- shield_advanced_protection_in_route53_hosted_zones
+- vpc_different_regions
+- vpc_subnet_different_az
+- autoscaling_group_multiple_az
+- backup_plans_exist
+- backup_reportplans_exist
+- backup_vaults_exist
+- cloudformation_stacks_termination_protection_enabled
+- cloudtrail_bucket_requires_mfa_delete
+- directoryservice_directory_snapshots_limit
+- dlm_ebs_snapshot_lifecycle_policy_exists
+- drs_job_exist
+- dynamodb_tables_pitr_enabled
+- ecr_repositories_lifecycle_policy_enabled
+
+- elbv2-no-deletion-protection
+- rds-instance-backup-disabled
+- rds-instance-short-backup-retention-period
+- rds-instance-single-az
+- s3-bucket-no-versioning
+
+- Auto Scaling Group Cooldown Period
+- AutoScaling ELB Same Availability Zone
+- Backup Deletion Protection Enabled
+- CloudFront Enable Origin Failover
+- ELB Unhealthy Instances
+- ELBv2 Minimum Number of EC2 Target Instances
+- ELBv2 Unhealthy Instances
+- KMS Scheduled Deletion
+- RDS Automated Backups
+
+
+### Insufficient monitoring of vulnerabilities in the infrastructure
+- iam_securityaudit_role_created
+- iam_support_role_created
+- inspector2_active_findings_exist
+- inspector2_is_enabled
+- rds_instance_enhanced_monitoring_enabled
+- securityhub_enabled
+- trustedadvisor_errors_and_warnings
+- trustedadvisor_premium_support_plan_subscribed
+- ec2_elastic_ip_shodan
+- ec2_instance_managed_by_ssm
+- ecr_registry_scan_images_on_push_enabled
+- ecr_repositories_scan_images_on_push_enabled
+- ecr_repositories_scan_vulnerabilities_in_latest_image
+- fms_policy_compliant
+
+- iam-no-support-role
+
+- EC2 CPU Alarm Threshold Exceeded
+
+
+### Insufficient monitoring of suspicious activities	
+- macie_is_enabled
+- rds_instance_integration_cloudwatch_logs
+- ssmincidents_enabled_with_plans
+- cloudtrail_insights_exist
+- cloudtrail_log_file_validation_enabled
+- cloudtrail_multi_region_enabled_logging_management_events
+- cloudwatch_changes_to_network_acls_alarm_configured
+- cloudwatch_changes_to_network_gateways_alarm_configured
+- cloudwatch_changes_to_network_route_tables_alarm_configured
+- cloudwatch_changes_to_vpcs_alarm_configured
+- cloudwatch_log_metric_filter_and_alarm_for_aws_config_configuration_changes_enabled
+- cloudwatch_log_metric_filter_and_alarm_for_cloudtrail_configuration_changes_enabled
+- cloudwatch_log_metric_filter_authentication_failures
+- cloudwatch_log_metric_filter_aws_organizations_changes
+- cloudwatch_log_metric_filter_disable_or_scheduled_deletion_of_kms_cmk
+- cloudwatch_log_metric_filter_for_s3_bucket_policy_changes
+- cloudwatch_log_metric_filter_policy_changes
+- cloudwatch_log_metric_filter_root_usage
+- cloudwatch_log_metric_filter_security_group_changes
+- cloudwatch_log_metric_filter_sign_in_without_mfa
+- cloudwatch_log_metric_filter_unauthorized_api_calls
+- directoryservice_directory_monitor_notifications
+- guardduty_is_enabled
+- guardduty_no_high_severity_findings
+
+- cloudwatch-alarm-without-actions
+- logs-no-alarm-aws-configuration-changes
+- logs-no-alarm-cloudtrail-configuration-changes
+- logs-no-alarm-cmk-deletion
+- logs-no-alarm-console-authentication-failures
+- logs-no-alarm-iam-policy-changes
+- logs-no-alarm-nacl-changes
+- logs-no-alarm-network-gateways-changes
+- logs-no-alarm-root-usage
+- logs-no-alarm-route-table-changes
+- logs-no-alarm-s3-policy-changes
+- logs-no-alarm-security-group-changes
+- logs-no-alarm-signin-without-mfa
+- logs-no-alarm-unauthorized-api-calls
+- logs-no-alarm-vpc-changes
+
+- EC2 Max Instances
+- Canary Keys Used
+
+
+### Missing or insufficient authentication or authorization
+- kms_cmk_rotation_enabled
+- secretsmanager_automatic_rotation_enabled
+- apigateway_restapi_authorizers_enabled
+- apigateway_restapi_public_with_authorizer
+- apigatewayv2_api_authorizers_enabled
+- athena_workgroup_enforce_configuration
+- cloudwatch_cross_account_sharing_disabled
+- codeartifact_packages_external_public_publishing_disabled
+- eks_control_plane_endpoint_access_restricted
+- glacier_vaults_policy_public_access
+
+- ec2-default-security-group-in-use
+- iam-assume-role-policy-allows-all
+- s3-bucket-world-policy-arg
+- s3-bucket-world-policy-star
+- ses-identity-world-policy
+- sns-topic-world-policy
+- sqs-queue-world-policy
+
+- API Gateway Authorization
+- API Gateway Default Endpoint Disabled
+- Auto Scaling Group Missing ELB
+- Web-Tier ASG Launch Configurations Approved AMIs
+- Web-Tier Auto Scaling Group Associated ELB
+- Web-Tier EC2 Instance IAM Role
+
+
+### Missing security updates
+- awslambda_function_using_supported_runtimes
+- opensearch_service_domains_updated_to_the_latest_service_software_version
+- rds_instance_minor_version_upgrade_enabled
+- rds_instance_deprecated_engine_version
+- redshift_cluster_automatic_upgrades
+- ssm_managed_compliant_patching
+- acm_certificates_expiration_check
+- directoryservice_ldap_certificate_expiration
+- elb_ssl_listeners
+
+- acm-certificate-with-close-expiration-date
+- rds-instance-ca-certificate-deprecated
+- rds-instance-no-minor-upgrade
+- rds-postgres-instance-with-invalid-certificate
+- redshift-cluster-no-version-upgrade
+
+- ACM Certificate Expiry
+- API Gateway Certificate Rotation
+- Detect EC2 Classic Instances
+
+
+
+### DNS specific issues
+- route53_dangling_ip_subdomain_takeover
+
+- route53-domain-no-autorenew
+- route53-domain-no-transferlock
+- route53-domain-transferlock-not-authorized
+
+- Route53 Dangling DNS Records
+- Domain Auto Renew
+- Domain Expiry
+
+
+
+### Insecure storage of secrets
+- awslambda_function_no_secrets_in_variables
+- ec2_instance_secrets_user_data
+- iam_no_expired_server_certificates_stored
+- kms_key_not_publicly_accessible
+- sns_topics_kms_encryption_at_rest_enabled
+- ssm_document_secrets
+- autoscaling_find_secrets_ec2_launch_configuration
+- awslambda_function_no_secrets_in_code
+- cloudformation_stack_outputs_find_secrets
+- cloudwatch_log_group_no_secrets_in_logs
+- ecs_task_definitions_no_environment_secrets
+- eks_cluster_kms_cmk_encryption_in_secrets_enabled
+- glue_data_catalogs_connection_passwords_encryption_enabled
+
+- ec2-instance-with-user-data-secrets
+- kms-cmk-rotation-disabled
+
+- API Stage-Level Cache Encryption
+- EKS Secrets Encrypted
+- Lambda Environment Variables Client Side Encryption
+- Secrets Manager Encrypted Secrets
+- SSM Encrypted Parameters
+
+
+
+### Other issues
+- kms_cmk_are_used
+- networkfirewall_in_all_vpc
+- organizations_account_part_of_organizations
+- organizations_scp_check_deny_regions
+- organizations_tags_policies_enabled_and_attached
+- resourceexplorer2_indexes_found
+- route53_domains_privacy_protection_enabled
+- route53_domains_transferlock_enabled
+- vpc_endpoint_connections_trust_boundaries
+- vpc_endpoint_services_allowed_principals_trust_boundaries
+- wellarchitected_workload_no_high_or_medium_risks
+- workspaces_vpc_2private_1public_subnets_nat
+- account_maintain_current_contact_details
+- account_maintain_different_contact_details_to_security_billing_and_operations
+- account_security_contact_information_is_registered
+- account_security_questions_are_registered_in_the_aws_account
+- apigateway_restapi_public
+- apigateway_restapi_waf_acl_attached
+- appstream_fleet_maximum_session_duration
+- appstream_fleet_session_disconnect_timeout
+- appstream_fleet_session_idle_disconnect_timeout
+- awslambda_function_url_cors_policy
+- cloudfront_distributions_geo_restrictions_enabled
+- codebuild_project_older_90_days
+- codebuild_project_user_controlled_buildspec
+- ec2_elastic_ip_unassigned
+- ec2_instance_older_than_specific_days
+- ec2_securitygroup_from_launch_wizard
+- ec2_securitygroup_not_used
+- elbv2_listeners_underneath
+- guardduty_centrally_managed
+
+- cloudtrail-duplicated-global-services-logging
+- cloudfront-distribution-insufficient-viewer-security
+- ec2-instance-in-security-group
+- ec2-instance-type
+- ec2-instance-types
+- iam-user-not-in-category-group
+- iam-user-not-in-common-group
+- ses-identity-dkim-not-verified
+- vpc-network-acl-not-used
+
+- ElastiCache Idle Cluster Status
+- ElastiCache Reserved Cache Node Payment Failed
+- ElastiCache Reserved Cache Node Payment Pending
+- Unused ElastiCache Reserved Cache Nodes
+- KMS Key Policy
+- RDS Idle Instance Status
+- RDS CPU Alarm Threshold
+- Redshift Unused Reserved Nodes
+- Underutilized Redshift Cluster Check
+- SSM Managed Instances
+- Unused WorkSpaces
+
